@@ -6,8 +6,6 @@ from api.v1.api import router as api_router
 app = FastAPI(title='Serverless Lambda FastAPI')
 
 
-
-
 @app.get("/",  tags=["Endpoint Test"])
 def main_endpoint_test():
     return {"message": "Welcome CI/CD Pipeline with GitHub Actions!"}
